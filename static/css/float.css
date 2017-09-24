@@ -1,0 +1,32 @@
+img[src$='#floatleft']
+{
+	float:left;
+        //etc. etc/
+}
+
+img[src$='#floatright']
+{
+	float:right;
+       //etc. etc.
+}
+
+
+figure {display:inline}
+figcaption {display:block}
+figure.left {float:left}
+figure.right {float:right}
+
+figure.left {
+  // float left set in foundatin for .left class
+  padding:0 1em 0 0; 
+   margin:0; 
+  max-width:49%;
+//  padding-right:2em;
+}
+
+figure.right{
+  // float right set in foundatin for .right class
+  max-width: 49%;
+  padding:0 0 0 1em;
+  // padding-left:2em;
+}

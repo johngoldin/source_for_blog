@@ -1,0 +1,78 @@
+baseurl = "/"
+relativeurls = true
+languageCode = "en-us"
+title = "Can I Blog Too"  
+theme = "hyde-x"
+    gravatarHash = "f7dd8b52bc092b4e50e9324381b02d67"
+
+MetaDataFormat = "toml"
+paginate = 10
+
+# Enable Disqus integration
+disqusShortname = "johngoldin"
+
+# send the public files to a different RStudio project
+publishDir = "../johngoldin.github.io"
+
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+
+[author]
+    name = "John Goldin"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/johngoldin"
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/johngoldin"
+[[menu.main]]
+    name = "Flickr"
+    url = "https://www.flickr.com/photos/99418994@N00/"
+
+[taxonomies]
+    # Optional. Use if you want tags and lists.
+    category = "categories"
+[params]
+    description = "Some of my personal projects with R"
+    
+    gravatarHash = "f7dd8b52bc092b4e50e9324381b02d67"
+
+    # twitter = "https://twitter.com/johngoldin"
+    # github = "https://github.com/johngoldin"
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.9.0"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+    # Changes sidebar background and link/accent colours.
+    # See below for more colour options.
+    # This also works: "theme-base-08 layout-reverse", or just "layout-reverse".
+    theme = "theme-base-08"
+   
+    license = "https://opensource.org/licenses/MIT"
+
+    # Sidebar position
+    # false, true, "left", "right"
+    sidebar = "right"
+
+    # Hide estimated reading time for posts.
+    # Default (if omitted) is false.
+    hideReadingTime = false
+    
+    # Displays under the author name in the sidebar, keep it short.
+    # You can use markdown here.
+    tagline = "Notes on this and that..."
+
+    googleAnalytics = "UA-92008736-1"
+    
+    custom_css = ["css/float.css"]
+    
+[params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
